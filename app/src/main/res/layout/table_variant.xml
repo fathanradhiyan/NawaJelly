@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:foreground="@drawable/border_pink"
+    android:layout_margin="3dp"
+    app:cardElevation="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/variantList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageVariant"
+            android:layout_width="60dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/njlogopink"
+            android:layout_height="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/variantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:text="@string/variant"
+                android:textColor="#BA000000" />
+
+            <TextView
+                android:id="@+id/variantPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textColor="#BA000000" />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/minus"-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    android:background="@color/colorPrimaryDark"-->
+<!--                    android:onClick="getAssist"-->
+<!--                    android:text="-"-->
+<!--                    android:textColor="#f9f6f6" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/digit"-->
+<!--                    android:layout_width="55dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    android:text="0"-->
+<!--                    android:textAlignment="center" />-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/plus"-->
+<!--                    android:layout_width="25dp"-->
+<!--                    android:layout_height="25dp"-->
+<!--                    android:background="@color/colorPrimaryDark"-->
+<!--                    android:text="+"-->
+<!--                    android:onClick="editAssist"-->
+<!--                    android:textColor="#f9f6f6" />-->
+<!--            </LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

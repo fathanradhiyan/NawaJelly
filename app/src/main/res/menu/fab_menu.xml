@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/signup"
+    android:icon="@drawable/ic_person_add_black_24dp"
+    android:title="@string/sign_up" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/my_profile" />
+
+    <item
+        android:id="@+id/myReseller"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="@string/my_reseller" />
+
+    <item
+        android:id="@+id/order"
+        android:icon="@drawable/ic_local_grocery_store_black_24dp"
+        android:title="@string/order" />
+
+</menu>
+

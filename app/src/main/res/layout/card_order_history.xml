@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:id="@+id/card_orderHistoryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/product_view"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:text="@string/total_price"
+                    android:textColor="#BA000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/dateOrder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/order_date"
+                    android:textColor="#BA000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/checkDetail"
+                android:layout_width="match_parent"
+                android:textColor="#ffffff"
+                android:background="@drawable/mybutton"
+                android:layout_weight="3"
+                android:text="detail"
+                android:layout_height="wrap_content" />
+
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:text="@string/you_have_placed_an_order"-->
+                <!--android:textColor="#BA000000"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/list_orderHistory"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:textColor="#BA000000"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:textSize="16sp"-->
+                <!--android:layout_height="wrap_content">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <TextView
+                android:id="@+id/id_orderHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
